@@ -18,6 +18,9 @@ app.get('/', (req, res) => {
 Optional [ROUTE] '/me'
 [Response] => Dicoding username.
 */
+app.get('/me',(req,res)=>{
+    res.send('aldev_developer')
+});
 
 app.listen(PORT, HOST)
 console.log(`Running on http://${HOST}:${PORT}`)
